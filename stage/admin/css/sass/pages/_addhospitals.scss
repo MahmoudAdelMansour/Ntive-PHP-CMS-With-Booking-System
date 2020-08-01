@@ -1,0 +1,241 @@
+.container-hospital-add {
+    margin-top: 3vw;
+    font-family: 'ar-hacen';
+
+    .content-hospital {
+        margin: 2vw;
+        display: grid;
+        grid-template: 1fr auto/repeat(3, 1fr);
+        grid-template-areas:
+            'title title title'
+            'savechanges . . '
+            'form form form'
+        ;
+        row-gap: 2vw;
+
+        grid-auto-flow: column;
+
+        .title-hospital {
+            grid-area: title;
+            justify-self: center;
+            text-align: center;
+            margin-bottom: 5vw;
+
+            h1 {
+                font-size: 2.9vw;
+                color: $flatbluedark;
+
+            }
+
+            span {
+                color: $silverdark;
+                font-size: .9vw;
+            }
+        }
+
+        .saveAllchanges {
+            grid-area: savechanges;
+            display: flex;
+
+            i {
+
+                margin: 0 0.5vw;
+                cursor: pointer;
+                background: $flatbluelight1;
+                border: 1px solid $flatbluelight1;
+                color: $silverlight;
+                border-radius: 50%;
+                padding: 1vw;
+                font-size: 2vw;
+                position: relative;
+                text-align: center;
+                transition: 0.3s;
+
+                &.save-add-hospital:hover:before {
+                    transition: 0.1s;
+                    font-family: 'ar-hacen';
+                    content: "اضافة المستشفي";
+                    position: absolute;
+                    color: $silverlight;
+                    background: $flatbluelight;
+                    font-size: 1.3vw;
+                    width: 10vw;
+                    padding: 1vw;
+                    top: 0;
+                    right: 0;
+                    border-radius: 0.5vw;
+                    box-shadow: 2px 0px 3px 0px $grayblack;
+                    z-index: 5;
+                }
+
+                &.undo-add-hospital:hover:before {
+                    transition: 0.1s;
+                    font-family: 'ar-hacen';
+                    content: "تراجع عن التغيرات";
+                    position: absolute;
+                    color: $silverlight;
+                    background: $flatbluelight;
+                    font-size: 1.3vw;
+                    width: 10vw;
+                    padding: 1vw;
+                    top: 0;
+                    right: 0;
+                    border-radius: 0.5vw;
+                    box-shadow: 2px 0px 3px 0px $grayblack;
+                    z-index: 2;
+                }
+
+
+
+            }
+
+        }
+
+        .formContainer {
+            grid-area: form;
+            position: relative;
+
+            .add-form {
+                display: grid;
+                grid-template: repeat(8,5vw) / 1fr 1fr;
+                grid-template-areas:
+                    'hospitalname upload'
+                    '. upload'
+                    'bioword bioword'
+                    'bioword bioword'
+                    'bioword bioword'
+                    'openh closeh'
+                    
+                ;
+                row-gap: 2vw;
+                column-gap: 1vw;
+
+                input {
+                    transition: 0.3s;
+                    font-family: 'ar-hacen';
+                    color: $grayblack;
+                    border: 0;
+                    padding: 0.5vw;
+                    border-right: 2px solid $flatbluelight1;
+
+                    opacity: 0.7;
+
+                    &:focus {
+                        opacity: 1;
+                        border: 0;
+                        border-bottom-width: 0px;
+                        border-bottom: 2px solid $flatbluelight1;
+                        background: $silverlight;
+                    }
+                }
+
+                .avaarea {
+                    text-align: center;
+                    margin: 3vw;
+                    position: absolute;
+                    left: 0;
+                    top: -11vw;
+                    span {
+                        display: block;
+                        margin: 1.5vw auto;
+                        width: 8vw;
+                        height: 2.5vw;
+                        cursor: pointer;
+                        background: radial-gradient(closest-corner at 50% 50%, $flatbluelight, $flatbluelight);
+                        padding: 0.5vw;
+                        color: $silverlight;
+                        font-size: 1.3vw;
+                        border-radius: 0.3vw;
+                        transition: 0.3s;
+
+                        &:hover {
+                            box-shadow: 0px 0px 4px 0px $grayblack;
+                            transform: scale(1.1);
+                        }
+
+                    }
+
+                    img {
+                        width: 15vw;
+                        height: 15vw;
+                        border: 43px solid #ccc;
+                        border-radius: 50%;
+                        border-image-slice: 1;
+                        border-width: 5px;
+                        border-color: $flatbluelight1;
+                        padding: 0.5vw;
+                    }
+                }
+
+                .add-hospital-input:nth-child(1) {
+
+                    display: none;
+
+                }
+
+                .avaarea {
+                    grid-area: upload;
+                    overflow: hidden;
+                    // position: absolute;
+                    // left: 0;
+                    // top: -8vw;
+                }
+
+                .add-hospital-input:nth-child(2) {
+                    grid-area: hospitalname;
+
+                }
+
+                .tox-tinymce {
+                     grid-area: bioword;
+                }
+                .add-hospital-input:nth-child(3) {
+                    grid-area: bioword;
+
+                }
+
+                .radios-mng {
+                    grid-area:openh ;
+                }
+                .radios-user {
+                    grid-area:closeh ;
+                }
+
+
+
+                // .add-chief-input:nth-child(4){
+
+
+                // }
+            }
+
+            .success {
+                position: absolute;
+                left: 30%;
+                top: 10%;
+                background: $successbck;
+                color: $successtext;
+                padding: 2vw 8vw;
+                z-index: 2;
+                font-size: 2vw;
+                border-radius: 0.5vw;
+                box-shadow: -0.7px 2.3px 6px 1px;
+
+            }
+
+            .unsuccess {
+                position: absolute;
+                left: 30%;
+                top: 10%;
+                background: $errorbck;
+                color: $errortext;
+                padding: 2vw 8vw;
+                z-index: 2;
+                font-size: 2vw;
+                border-radius: 0.5vw;
+                box-shadow: -0.7px 2.3px 6px 1px;
+            }
+        }
+
+    }
+}

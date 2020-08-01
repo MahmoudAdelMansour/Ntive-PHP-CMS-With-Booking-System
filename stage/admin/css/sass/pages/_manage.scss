@@ -1,0 +1,78 @@
+.main-section{
+    a{
+        color :$silverlight;
+    }
+        font-family: 'ar-hacen';
+	width:80%;
+	margin:0 auto;
+	text-align: center;
+	padding: 0px 5px;
+}
+.dashbord{
+    
+	width:60vw;
+	display: inline-block;
+	background-color:#34495E;
+	color:$silverlight;
+	margin-top: 50px; 
+}
+small {
+    font-size:2vw;
+}
+.icon-section i{
+	font-size: 5vw;
+	padding:2vw;
+    border:0.5px solid $flatbluelight0 ;
+    box-shadow: 0px 0px 6px 0.5px $grayblack ;
+	border-radius:50%;
+	margin-top:-25px;
+	margin-bottom: 10px;
+	background-color:#34495E;
+}
+.icon-section p{
+	margin:0px;
+	font-size: 6vw;
+	padding-bottom: 10px;
+}
+.detail-section{
+	background-color: #2F4254;
+	padding: 5px 0px;
+}
+.dashbord .detail-section:hover{
+	background-color: #5a5a5a;
+	cursor: pointer;
+}
+.detail-section a{
+	color:$silverlight;
+	text-decoration: none;
+}
+.dashbord-green .icon-section,.dashbord-green .icon-section i{
+	background-color: $successbck;
+}
+.dashbord-green .detail-section{
+	background-color: $successtext;
+}
+.dashbord-orange .icon-section,.dashbord-orange .icon-section i{
+	background-color: $yellowlight;
+}
+.dashbord-orange .detail-section{
+	background-color: $silverdark ;
+}
+.dashbord-blue .icon-section,.dashbord-blue .icon-section i{
+	background-color: $flatbluelight;
+}
+.dashbord-blue .detail-section{
+	background-color:$flatbluedark;
+}
+.dashbord-red .icon-section,.dashbord-red .icon-section i{
+	background-color:$errorbck;
+}
+.dashbord-red .detail-section{
+	background-color:$errortext;
+}
+.dashbord-skyblue .icon-section,.dashbord-skyblue .icon-section i{
+	background-color:$purplelight;
+}
+.dashbord-skyblue .detail-section{
+	background-color:$purpledark;
+}

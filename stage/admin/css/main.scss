@@ -1,0 +1,37 @@
+@import 'sass/variables/colors';
+@import 'sass/components/animation';
+@import 'sass/options/themes';
+@import 'sass/layout/globalFonts';
+@import 'sass/layout/global';
+@import 'sass/layout/sidebar';
+@import 'sass/pages/login';
+// START --- Chief Pages --- START
+@import 'sass/pages/addchief';
+@import 'sass/pages/editchief';
+@import 'sass/pages/managechief';
+// END --- Chif Pages --- END
+// START --- Companies Pages --- START
+@import 'sass/pages/addcompanies';
+@import 'sass/pages/editcompanies';
+@import 'sass/pages/managecompanies';
+// END --- Companies Pages --- END
+// START --- Stuff Pages --- START
+@import 'sass/pages/addstuff';
+@import 'sass/pages/editstuff';
+@import 'sass/pages/managestuff';
+// END --- Stuff Pages --- END
+// START --- Hospitals Pages --- START
+@import 'sass/pages/addhospitals';
+@import 'sass/pages/edithospitals';
+@import 'sass/pages/managehospitals';
+// END --- Hospitals Pages --- END
+// START --- Booking Pages --- START
+@import 'sass/pages/addbooking';
+@import 'sass/pages/editbooking';
+@import 'sass/pages/managebooking';
+// END --- Booking Pages --- END
+// START --- Booking Pages --- START
+@import 'sass/pages/manage';
+
+// END --- Booking Pages --- END
+@import 'sass/layout/header';

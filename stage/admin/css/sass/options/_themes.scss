@@ -1,0 +1,530 @@
+$themes: (
+    red : (hiscolor: $flatreddark),
+    purple : (hiscolor: $purpledark),
+    yellow : (hiscolor: $yellowlight),
+    deffault : (hiscolor:$flatbluedark));
+// $theme mean -> flat-red,flat purple etc ....
+// $map stand for hiscolor or any property
+//  map-get is method in sass to get the value of object from property you choose It
+
+@each $myTheme,
+$map in $themes {
+    .#{$myTheme} {
+
+        // .classname {
+        //     color: map-get($map, hiscolor);
+        // }
+        .content-area {
+            .headOfside {
+                .c-headOfside {
+                    a {
+                    color: map-get($map, hiscolor) !important;
+                    }
+                }
+            }
+        }
+
+        i {
+            &.fa-toggle-on {
+                color: map-get($map, hiscolor) !important;
+
+            }
+
+
+            &.fa-bell {
+                color: map-get($map, hiscolor) !important;
+            }
+
+            &.toggle-fullscreen {
+                color: map-get($map, hiscolor) !important;
+
+            }
+
+            &.on {
+                color: map-get($map, hiscolor) !important;
+                background-color: $silverlight0 !important;
+
+                &:hover {
+                    color: map-get($map, hiscolor) !important;
+                    background-color: $silverlight0 !important;
+                }
+            }
+
+        }
+
+        .avatar-img {
+            i {
+                color: map-get($map, hiscolor) !important;
+            }
+        }
+
+        .menu-avatar {
+            li {
+                background: map-get($map, hiscolor) !important;
+                &:hover a {
+                    background: map-get($map, hiscolor) !important;
+                }
+            }
+        }
+
+
+        .linksmain {
+            >li>a {
+                background-color: map-get($map, hiscolor) !important;
+            }
+
+
+        }
+
+        .menu {
+            .child-links {
+                li {
+                    a {
+                        &:hover:before {
+                            background-color: map-get($map, hiscolor) !important;
+                        }
+                        &.active {
+                                    background-color: $flatbluelight0;
+                                    &:before {
+                                        background-color: $flatbluelight1;
+    
+                                    }
+                                }
+                    }
+                }
+            }
+        }
+        .container-chief-add {
+            .title-chief { 
+                h1 {
+                    color:map-get($map , hiscolor ) !important;
+                  
+                    }
+            }
+            .avaarea {
+                span{
+                    background:map-get($map , hiscolor ) !important ;
+                }
+                img{
+                    border-color:map-get($map , hiscolor ) !important;
+                }
+            }
+            .saveAllchanges {
+                i {
+                    background: map-get($map , hiscolor ) !important;
+                    border-color: map-get($map , hiscolor ) !important;
+                    &.save-add:hover:before {
+
+                        background: map-get($map , hiscolor ) !important;
+                    }
+                    &.undo-add:hover:before {
+                        background: map-get($map , hiscolor ) !important;
+                }
+                }
+            }
+            .add-form {
+                input { 
+                    border-color:map-get($map , hiscolor ) !important; ;
+                }
+            }
+        }
+        .container-companies-edit {
+            .title-companies { 
+                h1 {
+                    color:map-get($map , hiscolor ) !important;
+                  
+                    }
+            }
+            .avaarea {
+                span{
+                    background:map-get($map , hiscolor ) !important ;
+                }
+                img{
+                    border-color:map-get($map , hiscolor ) !important;
+                }
+            }
+            .saveAllchanges {
+                i {
+                    background: map-get($map , hiscolor ) !important;
+                    border-color: map-get($map , hiscolor ) !important;
+                    &.save-edit-companies:hover:before {
+
+                        background: map-get($map , hiscolor ) !important;
+                    }
+                    &.undo-edit-companies:hover:before {
+                        background: map-get($map , hiscolor ) !important;
+                }
+                }
+            }
+            .edit-form {
+                input { 
+                    border-color:map-get($map , hiscolor ) !important; ;
+                }
+            }
+        }
+        
+        .container-companies-add {
+            .title-companies { 
+                h1 {
+                    color:map-get($map , hiscolor ) !important;
+                  
+                    }
+            }
+            .avaarea {
+                span{
+                    background:map-get($map , hiscolor ) !important ;
+                }
+                img{
+                    border-color:map-get($map , hiscolor ) !important;
+                }
+            }
+            .saveAllchanges {
+                i {
+                    background: map-get($map , hiscolor ) !important;
+                    border-color: map-get($map , hiscolor ) !important;
+                    &.save-add-companies:hover:before {
+
+                        background: map-get($map , hiscolor ) !important;
+                    }
+                    &.undo-add-companies:hover:before {
+                        background: map-get($map , hiscolor ) !important;
+                }
+                }
+            }
+            .add-form {
+                input { 
+                    border-color:map-get($map , hiscolor ) !important; ;
+                }
+            }
+        }
+        .container-chief-edit {
+            .title-chief { 
+                h1 {
+                    color:map-get($map , hiscolor ) !important;
+                  
+                    }
+            }
+            .avaarea {
+                span{
+                    background:map-get($map , hiscolor ) !important ;
+                }
+                img{
+                    border-color:map-get($map , hiscolor ) !important;
+                }
+            }
+            .saveAllchanges {
+                i {
+                    background: map-get($map , hiscolor ) !important;
+                    border-color: map-get($map , hiscolor ) !important;
+                    &.save-edit:hover:before {
+
+                        background: map-get($map , hiscolor ) !important;
+                    }
+                    &.undo-edit:hover:before {
+                        background: map-get($map , hiscolor ) !important;
+                }
+                }
+            }
+            .edit-form {
+                input { 
+                    border-color:map-get($map , hiscolor ) !important; ;
+                }
+            }
+        }
+        .container-stuff-add {
+            .title-stuff { 
+                h1 {
+                    color:map-get($map , hiscolor ) !important;
+                  
+                    }
+            }
+            .avaarea {
+                span{
+                    background:map-get($map , hiscolor ) !important ;
+                }
+                img{
+                    border-color:map-get($map , hiscolor ) !important;
+                }
+            }
+            .saveAllchanges {
+                i {
+                    background: map-get($map , hiscolor ) !important;
+                    border-color: map-get($map , hiscolor ) !important;
+                    &.save-add-stuff:hover:before {
+
+                        background: map-get($map , hiscolor ) !important;
+                    }
+                    &.undo-add-stuff:hover:before {
+                        background: map-get($map , hiscolor ) !important;
+                }
+                }
+            }
+            .add-form {
+                input { 
+                    border-color:map-get($map , hiscolor ) !important; ;
+                }
+            }
+        }
+        .container-stuff-edit {
+            .title-stuff { 
+                h1 {
+                    color:map-get($map , hiscolor ) !important;
+                  
+                    }
+            }
+            .avaarea {
+                span{
+                    background:map-get($map , hiscolor ) !important ;
+                }
+                img{
+                    border-color:map-get($map , hiscolor ) !important;
+                }
+            }
+            .saveAllchanges {
+                i {
+                    background: map-get($map , hiscolor ) !important;
+                    border-color: map-get($map , hiscolor ) !important;
+                    &.save-edit-stuff:hover:before {
+
+                        background: map-get($map , hiscolor ) !important;
+                    }
+                    &.undo-edit-stuff:hover:before {
+                        background: map-get($map , hiscolor ) !important;
+                }
+                }
+            }
+            .edit-form {
+                input { 
+                    border-color:map-get($map , hiscolor ) !important; ;
+                }
+            }
+        }
+        .container-hospital-add {
+            .title-hospital { 
+                h1 {
+                    color:map-get($map , hiscolor ) !important;
+                  
+                    }
+            }
+            .avaarea {
+                span{
+                    background:map-get($map , hiscolor ) !important ;
+                }
+                img{
+                    border-color:map-get($map , hiscolor ) !important;
+                }
+            }
+            .saveAllchanges {
+                i {
+                    background: map-get($map , hiscolor ) !important;
+                    border-color: map-get($map , hiscolor ) !important;
+                    &.save-add-hospital:hover:before {
+
+                        background: map-get($map , hiscolor ) !important;
+                    }
+                    &.undo-add-hospital:hover:before {
+                        background: map-get($map , hiscolor ) !important;
+                }
+                }
+            }
+            .add-form {
+                input { 
+                    border-color:map-get($map , hiscolor ) !important; ;
+                }
+            }
+        }
+        .container-hospital-edit {
+            .title-hospital { 
+                h1 {
+                    color:map-get($map , hiscolor ) !important;
+                  
+                    }
+            }
+            .avaarea {
+                span{
+                    background:map-get($map , hiscolor ) !important ;
+                }
+                img{
+                    border-color:map-get($map , hiscolor ) !important;
+                }
+            }
+            .saveAllchanges {
+                i {
+                    background: map-get($map , hiscolor ) !important;
+                    border-color: map-get($map , hiscolor ) !important;
+                    &.save-edit-hospital:hover:before {
+
+                        background: map-get($map , hiscolor ) !important;
+                    }
+                    &.undo-edit-hospital:hover:before {
+                        background: map-get($map , hiscolor ) !important;
+                }
+                }
+            }
+            .edit-form {
+                input { 
+                    border-color:map-get($map , hiscolor ) !important; ;
+                }
+            }
+        }
+        .container-booking-add {
+            .title-booking { 
+                h1 {
+                    color:map-get($map , hiscolor ) !important;
+        
+                    }
+            }
+            .avaarea {
+                span{
+                    background:map-get($map , hiscolor ) !important ;
+                }
+                img{
+                    border-color:map-get($map , hiscolor ) !important;
+                }
+            }
+            .saveAllchanges {
+                i {
+                    background: map-get($map , hiscolor ) !important;
+                    border-color: map-get($map , hiscolor ) !important;
+                    &.save-add-booking:hover:before {
+
+                        background: map-get($map , hiscolor ) !important;
+                    }
+                    &.undo-add-booking:hover:before {
+                        background: map-get($map , hiscolor ) !important;
+                }
+                }
+            }
+            .add-form {
+                input { 
+                    border-color:map-get($map , hiscolor ) !important; ;
+                }
+            }
+        }
+        .container-booking-edit {
+            .title-booking { 
+                h1 {
+                    color:map-get($map , hiscolor ) !important;
+        
+                    }
+            }
+            .avaarea {
+                span{
+                    background:map-get($map , hiscolor ) !important ;
+                }
+                img{
+                    border-color:map-get($map , hiscolor ) !important;
+                }
+            }
+            .saveAllchanges {
+                i {
+                    background: map-get($map , hiscolor ) !important;
+                    border-color: map-get($map , hiscolor ) !important;
+                    &.save-edit-booking:hover:before {
+
+                        background: map-get($map , hiscolor ) !important;
+                    }
+                    &.undo-edit-booking:hover:before {
+                        background: map-get($map , hiscolor ) !important;
+                }
+                }
+            }
+            .edit-form {
+                input { 
+                    border-color:map-get($map , hiscolor ) !important; ;
+                }
+            }
+        }
+        .manage-chief {
+            .title-of-manage {
+                h1 {
+                    color:map-get($map ,hiscolor) !important;
+                }
+        
+            }
+            .table-of-chief {
+                .table-add-button {
+                    a {
+                        color: map-get($map , hiscolor ) !important;
+                    }
+                }
+                .table-content {
+                    border-top: 1px solid map-get($map, hiscolor ) !important;
+                }
+            }
+        }
+        .manage-companies {
+            .title-of-manage {
+                h1 {
+                    color:map-get($map ,hiscolor) !important;
+                }
+        
+            }
+            .table-of-companies {
+                .table-add-button {
+                    a {
+                        color: map-get($map , hiscolor ) !important;
+                    }
+                }
+                .table-content {
+                    border-top: 1px solid map-get($map, hiscolor ) !important;
+                }
+            }
+        }
+        .manage-stuff {
+            .title-of-manage {
+                h1 {
+                    color:map-get($map ,hiscolor) !important;
+                }
+        
+            }
+            .table-of-stuff {
+                .table-add-button {
+                    a {
+                        color: map-get($map , hiscolor ) !important;
+                    }
+                }
+                .table-content {
+                    border-top: 1px solid map-get($map, hiscolor ) !important;
+                }
+            }
+        }
+        .manage-hospital {
+            .title-of-manage {
+                h1 {
+                    color:map-get($map ,hiscolor) !important;
+                }
+        
+            }
+            .table-of-hospital {
+                .table-add-button {
+                    a {
+                        color: map-get($map , hiscolor ) !important;
+                    }
+                }
+                .table-content {
+                    border-top: 1px solid map-get($map, hiscolor ) !important;
+                }
+            }
+        }
+        .manage-booking {
+            .title-of-manage {
+                h1 {
+                    color:map-get($map ,hiscolor) !important;
+                }
+        
+            }
+            .table-of-booking {
+                .table-add-button {
+                    a {
+                        color: map-get($map , hiscolor ) !important;
+                    }
+                }
+                .table-content {
+                    border-top: 1px solid map-get($map, hiscolor ) !important;
+                }
+            }
+        }
+
+    }
+}

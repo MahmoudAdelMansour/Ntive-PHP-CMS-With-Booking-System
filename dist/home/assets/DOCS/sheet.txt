@@ -1,0 +1,33 @@
+ --- Analysis For Admin Panel --
+	-=HOME=-
+	(- By Every Section -)
+	|--> Controling In ( All Images ) **
+	|--> Controling In (Contact And Workin Hours) 
+	|--> Controling In ( Main Phrases )**
+	|--> Controling In (Plans and All Prices )**
+	|--> Controling In ( Team Work Images And Info ) 
+	|--> Controling In ( Get In Touch Area )**
+
+
+	-=About US=-
+	(- By Every Section -)
+	|--> How We Works 
+	|--> While Cards **
+	|--> Counter **
+
+
+
+	-=Contact US =-
+	(- By Every Section -)
+	|--> Mail Form 
+	|--> Info Cards
+
+
+
+
+	-=Our Events=-
+	(- By Every Section -)
+	|--> ( All Images ) 
+	|--> (Event Name ) 
+	|--> ( Eevent Date )
+	|--> ( Event Details )

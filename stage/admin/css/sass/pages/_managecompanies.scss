@@ -1,0 +1,174 @@
+.manage-companies {
+    *:not(i) {
+        font-family: 'ar-hacen';
+    }
+
+    .hidden-load {
+        &.hidden {
+            display: none;
+            z-index: 2;
+        }
+
+        font-size: 5vw;
+        position: absolute;
+        top: 49%;
+        left: 41%;
+        z-index:2;
+    }
+
+    // display:grid;
+    .content-manage {
+        display: grid;
+        grid-template: 20vw auto / auto;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+
+        .title-of-manage {
+            margin: 5vw auto;
+            text-align: center;
+
+            h1 {
+                color: $flatbluelight;
+                margin: 0.5vw 0;
+                font-size: 2.9vw;
+            }
+
+            p {
+                color: $silverdark;
+                font-size: 1.2vw;
+
+                span {
+                    color: $flatreddark;
+                    font-size: 1vw;
+                }
+            }
+
+        }
+
+        .table-of-companies {
+            .success {
+                position: absolute;
+                left: 30%;
+                top: 10%;
+                background: $successbck;
+                color: $successtext;
+                padding: 2vw 8vw;
+                z-index: 2;
+                font-size: 2vw;
+                border-radius: 0.5vw;
+                box-shadow: -0.7px 2.3px 6px 1px;
+
+            }
+
+            .unsuccess {
+                position: absolute;
+                left: 30%;
+                top: 10%;
+                background: $errorbck;
+                color: $errortext;
+                padding: 2vw 8vw;
+                z-index: 2;
+                font-size: 2vw;
+                border-radius: 0.5vw;
+                box-shadow: -0.7px 2.3px 6px 1px;
+            }
+
+            .table-add-button {
+                margin: 1vw 0.5vw;
+                width: 3vw;
+                text-align: center;
+                transition: 0.3s;
+                a {
+                    color: $successtext;
+                    font-size: 2vw;
+                    
+                    i {
+                        
+                        cursor: pointer;
+                        transition: 0.3s;
+                        &:hover {
+                            transform:rotate(90deg);
+                            color :$successbck;
+                        }
+                    }
+                }
+
+            }
+
+            .table-content {
+                width: 100%;
+                background: $silverlight;
+                border-top: 1px solid $flatbluedark;
+                color: $grayblack;
+                // border-collapse: separate;
+                // border-spacing: 14px;
+
+                tr {
+                    height: 3vw;
+
+                    &:hover {
+                        background: $silverlight0;
+                    }
+
+                    // &:not(:nth-child(1)) {
+                    //     td {
+
+                    //     }
+
+                    // }
+                    td {
+                        border-bottom: 1px solid $grayblack;
+                        padding: 0.5vw;
+                        width: 1.5vw;
+                        text-align: center;
+                        font-size: 1vw;
+
+                        img {
+                            width: 5vw;
+                            height: 4.5vw;
+                            border: 1px solid $grayblack;
+                            border-radius: 50%;
+                        }
+
+                        a {
+                            transition: 0.3s;
+                            opacity: 0.8;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+
+                            &:nth-child(1) {
+                                color: $successtext;
+                                background: $successbck;
+                                padding: 0.5vw 1.5vw;
+                                border-radius: 4px;
+                                border: 1px solid;
+
+                                i {
+
+                                    color: $silverlight;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                color: $errortext;
+                                background: $errorbck;
+                                padding: 0.5vw 1.5vw;
+                                border-radius: 4px;
+                                border: 1px solid;
+
+                                i {
+
+                                    color: $silverlight;
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

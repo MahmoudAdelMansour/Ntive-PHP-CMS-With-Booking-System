@@ -1,0 +1,49 @@
+{
+  "name": "1_template",
+  "version": "1.0.0",
+  "description": "Companies Management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahmoudAdelMansour/Companies-Management.git"
+  },
+  "keywords": [
+    "companies",
+    "management",
+    "cms",
+    "php",
+    "html",
+    "css",
+    "sass",
+    "gulp"
+  ],
+  "author": "Mahmoud Mansour",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MahmoudAdelMansour/Companies-Management/issues"
+  },
+  "homepage": "https://github.com/MahmoudAdelMansour/Companies-Management#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-beautify": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "gulp-git": "^2.10.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 2%"
+  ]
+
+}

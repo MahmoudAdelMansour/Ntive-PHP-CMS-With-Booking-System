@@ -1,0 +1,147 @@
+.dashHeader {
+    background-color: $silverlight;
+    grid-area: navbar;
+    align-self: start;
+    padding: 15px;
+    box-shadow: 0px 2px 6px 1px $grayblack;
+
+    .menuOfHead {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        position: relative;
+
+        i {
+            transition: 0.5s;
+            cursor: pointer !important;
+            margin: 0 10px;
+            font-size: 2.5vw;
+            &.fa-toggle-on {
+                color: $flatbluelight;
+                font-size: 2.5vw;
+            }
+
+            &.fa-toggle-off {
+                color: $silverdark;
+            }
+
+            &.fa-bell {
+                color: $silverdark;
+                padding: 0.8vw;
+                background-color: $silverlight0;
+                border-radius: 50%;
+
+
+            }
+
+            &.fa-bell-on {
+                color: $flatbluelight;
+                padding: 0.8vw;
+
+            }
+
+            &.toggle-fullscreen {
+                color: $flatbluedark;
+                padding: 0.8vw;
+                background-color: $silverlight0;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                font-size: 2.5vw;
+                &:hover {
+                    transform: scale(1.4) rotate(180deg);
+                    padding: 0.8vw;
+                    background-color: transparent;
+                }
+
+            }
+
+            &.on {
+                color: $silverlight0;
+                background-color: $flatbluedark;
+
+                &:hover {
+                    color: $flatbluedark;
+                    transform: scale(-0.9) rotate(-180deg);
+                    padding: 0.8vw;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .profile-avatar {
+            position: absolute;
+            left: 4vw;
+
+            .avatar-img {
+                transition: 0.5s;
+                cursor: pointer !important;
+                margin: 0 10px;
+                position: relative;
+
+                i {
+                    color: $flatbluedark;
+                    font-size: 2.5vw;
+                    padding: 0.8vw;
+                    border-radius: 50%;
+
+                }
+
+                .menu-avatar {
+                    display: none;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    top: 4vw;
+                    width: 15vw;
+                    height: 9.2vw;
+                    background: $flatbluedark;
+                    padding: 1vw;
+                    font-size: 1.5vw;
+                    box-shadow: -1px 3px 7px 0px;
+
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+
+                        height: 10px;
+                        border-width: 10px;
+                        border-color: transparent transparent $flatbluedark transparent;
+                        border-style: solid;
+                        top: -29px;
+                        left: 19px;
+                    }
+
+                    &.visimenu {
+                        display: block;
+                    }
+
+                    li {
+                        font-family: 'ar-hacen-simple';
+                        margin: 0.5vw 0;
+                        background: $flatbluelight;
+                        display: block;
+                        padding: 0.5vw;
+
+                        &:hover {
+                            background: $silverlight0;
+                        }
+
+                        &:hover a {
+                            background: $silverlight0;
+                            color: $flatbluelight;
+                        }
+
+                        a {
+
+                            padding: 0.5vw;
+                            color: $silverlight;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
